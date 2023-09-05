@@ -1,10 +1,10 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
 ARG WINE_VERSION=winehq-stable
-ARG PYTHON_VERSION=3.9.10
-ARG PYINSTALLER_VERSION=4.8
+ARG PYTHON_VERSION=3.10.9
+ARG PYINSTALLER_VERSION=5.13.2
 
 # we need wine for this all to work, so we'll use the PPA
 RUN set -x \
